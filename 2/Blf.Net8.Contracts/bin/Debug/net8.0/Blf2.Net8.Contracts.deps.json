@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Blf2.Net8.Contracts/1.0.0": {
+        "dependencies": {
+          "Blf2.Net8.Entitry": "1.0.0"
+        },
+        "runtime": {
+          "Blf2.Net8.Contracts.dll": {}
+        }
+      },
+      "Blf2.Net8.Entitry/1.0.0": {
+        "runtime": {
+          "Blf2.Net8.Entitry.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Blf2.Net8.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Blf2.Net8.Entitry/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

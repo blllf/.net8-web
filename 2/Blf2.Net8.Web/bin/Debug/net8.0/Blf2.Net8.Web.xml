@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Blf2.Net8.Web</name>
+    </assembly>
+    <members>
+        <member name="M:Blf2.Net8.Web.Controllers.PlayerController.GetAllPlayers">
+            <summary>
+            获取所有玩家(手动映射)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Blf2.Net8.Web.Controllers.PlayerController.GetAllPlayersAuto">
+            <summary>
+            获取所有玩家(自动映射)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Blf2.Net8.Web.Controllers.PlayerController.GetPlayerById(System.Guid)">
+            <summary>
+            根据Id获取玩家信息
+            </summary>
+            <param name="playerId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blf2.Net8.Web.Controllers.WeatherForecastController.Get">
+            <summary>
+            天气预报
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Blf2.Net8.Web.MappingProfile">
+            <summary>
+            映射配置类
+            </summary>
+        </member>
+    </members>
+</doc>
