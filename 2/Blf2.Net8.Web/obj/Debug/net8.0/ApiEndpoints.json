@@ -106,6 +106,64 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Blf2.Net8.Web.Controllers.PlayerController",
+    "Method": "GetPlayersByCondition",
+    "RelativePath": "api/player/GetPlayersByCondition",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Blf2.Net8.Web.Controllers.PlayerController",
+    "Method": "GetPlayersByPaged",
+    "RelativePath": "api/player/GetPlayersByPaged",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Blf2.Net8.Web.Controllers.UtilsController",
+    "Method": "InsertDataToDB",
+    "RelativePath": "api/Utils/inserDataByNumber",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "number",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Blf2.Net8.Web.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",

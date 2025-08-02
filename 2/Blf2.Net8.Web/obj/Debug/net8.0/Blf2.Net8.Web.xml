@@ -23,6 +23,11 @@
             <param name="playerId"></param>
             <returns></returns>
         </member>
+        <member name="F:Blf2.Net8.Web.Controllers.UtilsController._playerRepository">
+            <summary>
+            注入仓储
+            </summary>
+        </member>
         <member name="M:Blf2.Net8.Web.Controllers.WeatherForecastController.Get">
             <summary>
             天气预报

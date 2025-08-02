@@ -3,8 +3,10 @@ using Blf.Net8.Contracts;
 using Blf.Net8.EntityFramework;
 using Blf2.Net8.Entitry;
 using Blf2.Net8.Entitry.DTOs;
+using Blf2.Net8.Entitry.RequestFeature;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace Blf2.Net8.Web.Controllers {
 
@@ -15,7 +17,7 @@ namespace Blf2.Net8.Web.Controllers {
         private readonly IPlayerRepository _playerRepository;
         private readonly IMapper _mapper;
       
-        // 缺少构造函数
+        // 构造函数
         public PlayerController(IPlayerRepository playerRepository , IMapper mapper) {
             _playerRepository = playerRepository;
             _mapper = mapper;
@@ -46,6 +48,21 @@ namespace Blf2.Net8.Web.Controllers {
         [Route("GetAllPlayersAuto")]
         public async Task<IActionResult> GetAllPlayersAuto() {
             var players = await _playerRepository.GetPlayers();
+            var playerDtos = _mapper.Map<IEnumerable<PlayerDto>>(players);
+            return Ok(playerDtos);
+        }
+
+        [HttpGet("GetPlayersByCondition")]
+        public async Task<IActionResult> GetPlayersByCondition([FromQuery] PlayerParameter parameter) {
+            var players = await _playerRepository.GetPlayersByCondition(parameter);
+            var playerDtos = _mapper.Map<IEnumerable<PlayerDto>>(players);
+            return Ok(playerDtos);
+        }
+
+        [HttpGet("GetPlayersByPaged")]
+        public IActionResult GetPlayersByPaged([FromQuery] PlayerParameter parameter) {
+            var players = _playerRepository.GetPlayersByConditionPro(parameter);
+            Response.Headers.Add("X-Pagination" , JsonConvert.SerializeObject(players.pagedMetaData));
             var playerDtos = _mapper.Map<IEnumerable<PlayerDto>>(players);
             return Ok(playerDtos);
         }

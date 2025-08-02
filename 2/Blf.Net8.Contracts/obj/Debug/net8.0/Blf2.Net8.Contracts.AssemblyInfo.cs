@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Blf2.Net8.Contracts")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+466ee31ec84c33977ae3d2f15c2be57ca54904c9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Blf2.Net8.Contracts")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Blf2.Net8.Contracts")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
