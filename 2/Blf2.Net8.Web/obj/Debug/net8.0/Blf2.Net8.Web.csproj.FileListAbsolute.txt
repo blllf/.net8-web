@@ -421,7 +421,6 @@ D:\work\VisualStudio\myproject\ddd\2\2\Blf2.Net8.Web\obj\Debug\net8.0\Blf2.Net8.
 D:\work\VisualStudio\myproject\ddd\2\2\Blf2.Net8.Web\obj\Debug\net8.0\Blf2.Net8.Web.AssemblyInfoInputs.cache
 D:\work\VisualStudio\myproject\ddd\2\2\Blf2.Net8.Web\obj\Debug\net8.0\Blf2.Net8.Web.AssemblyInfo.cs
 D:\work\VisualStudio\myproject\ddd\2\2\Blf2.Net8.Web\obj\Debug\net8.0\Blf2.Net8.Web.csproj.CoreCompileInputs.cache
-D:\work\VisualStudio\myproject\ddd\2\2\Blf2.Net8.Web\obj\Debug\net8.0\Blf2.Net8.Web.MvcApplicationPartsAssemblyInfo.cs
 D:\work\VisualStudio\myproject\ddd\2\2\Blf2.Net8.Web\obj\Debug\net8.0\Blf2.Net8.Web.MvcApplicationPartsAssemblyInfo.cache
 D:\work\VisualStudio\myproject\ddd\2\2\Blf2.Net8.Web\obj\Debug\net8.0\Blf2.Net8.Web.sourcelink.json
 D:\work\VisualStudio\myproject\ddd\2\2\Blf2.Net8.Web\obj\Debug\net8.0\rjimswa.dswa.cache.json
@@ -441,3 +440,5 @@ D:\work\VisualStudio\myproject\ddd\2\2\Blf2.Net8.Web\obj\Debug\net8.0\Blf2.Net8.
 D:\work\VisualStudio\myproject\ddd\2\2\Blf2.Net8.Web\obj\Debug\net8.0\Blf2.Net8.Web.genruntimeconfig.cache
 D:\work\VisualStudio\myproject\ddd\2\2\Blf2.Net8.Web\obj\Debug\net8.0\ref\Blf2.Net8.Web.dll
 D:\work\VisualStudio\myproject\ddd\2\2\Blf2.Net8.Web\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\work\VisualStudio\myproject\ddd\2\2\Blf2.Net8.Web\bin\Debug\net8.0\Blf2.Net8.Service.dll
+D:\work\VisualStudio\myproject\ddd\2\2\Blf2.Net8.Web\bin\Debug\net8.0\Blf2.Net8.Service.pdb

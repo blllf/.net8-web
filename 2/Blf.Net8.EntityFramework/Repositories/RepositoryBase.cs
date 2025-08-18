@@ -29,7 +29,8 @@ namespace Blf.Net8.EntityFramework.Repositories {
             return _dbContext.Set<T>().Where(expression).AsNoTracking();
         }
 
-        public IQueryable<T> GetAll() {
+        // 添加专门用于查询的方法
+        public IQueryable<T> GetPlayersQuery() {
             return _dbContext.Set<T>().AsNoTracking();
         }
 

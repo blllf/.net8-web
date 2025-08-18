@@ -25,12 +25,12 @@ namespace Blf2.Net8.EntityFramework.Repositories {
         }
 
         public async Task<List<Player>> GetPlayers() {
-            return await GetAll().OrderBy(x => x.Id).ToListAsync();
+            return await GetPlayersQuery().OrderBy(x => x.Id).ToListAsync();
         }
 
         // 分页查询
         public async Task<List<Player>> GetPlayersByCondition(PlayerParameter parameter) {
-            return await GetAll()
+            return await GetPlayersQuery()
                    .OrderBy(x => x.DateCreate)
                    .Skip((parameter.pageNumber - 1) * parameter.pageSize)
                    .Take(parameter.pageSize)
@@ -38,7 +38,7 @@ namespace Blf2.Net8.EntityFramework.Repositories {
         }
 
         public PagedList<Player> GetPlayersByConditionPro(PlayerParameter parameter) {
-            return  GetAll()
+            return GetPlayersQuery()
                    .OrderBy(x => x.DateCreate)
                    .ToPagedList(parameter.pageNumber, parameter.pageSize);
         }

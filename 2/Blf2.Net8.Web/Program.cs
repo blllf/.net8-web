@@ -3,6 +3,8 @@ using Blf.Net8.Contracts;
 using Blf.Net8.EntityFramework.Repositories;
 using Blf2.Net8.Entitry;
 using Blf2.Net8.EntityFramework.Repositories;
+using Blf2.Net8.Service;
+using Blf2.Net8.Service.Impl;
 using Blf2.Net8.Web.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.OpenApi.Models;
@@ -21,6 +23,7 @@ namespace Blf2.Net8.Web
             builder.Services.AddControllers();
             // 将IPlayerRepository接口与PlayerRepository实现类进行注册绑定。AddScoped表示注册为作用域生命周期的服务
             builder.Services.AddScoped<IPlayerRepository, PlayerRepository>();
+            builder.Services.AddScoped<IPlayerService, PlayerService>();
        
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();

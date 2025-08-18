@@ -148,6 +148,27 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Blf2.Net8.Web.Controllers.PlayerController",
+    "Method": "Search",
+    "RelativePath": "api/player/Search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "guid",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "account",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Blf2.Net8.Web.Controllers.UtilsController",
     "Method": "InsertDataToDB",
     "RelativePath": "api/Utils/inserDataByNumber",

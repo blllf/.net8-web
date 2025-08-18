@@ -7,12 +7,11 @@ using System.Threading.Tasks;
 
 namespace Blf.Net8.Contracts {
     public interface IRepositoryBase<T> {
-        IQueryable<T> GetAll();
+        IQueryable<T> GetPlayersQuery();
         IQueryable<T> FindByCondition(Expression<Func<T, bool>> expression);
         Task Create(T entity);
         void Update(T entity);
         void Delete(T entity);
-
         Task<int> SaveChangesAsync();
     }
 }

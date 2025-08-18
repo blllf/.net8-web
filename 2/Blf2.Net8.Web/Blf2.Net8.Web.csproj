@@ -20,6 +20,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Blf.Net8.EntityFramework\Blf2.Net8.EntityFramework.csproj" />
     <ProjectReference Include="..\Blf2.Net8.Entitry\Blf2.Net8.Entitry.csproj" />
+    <ProjectReference Include="..\Blf2.Net8.Service\Blf2.Net8.Service.csproj" />
   </ItemGroup>
 
 </Project>

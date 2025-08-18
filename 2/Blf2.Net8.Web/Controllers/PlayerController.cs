@@ -4,6 +4,7 @@ using Blf.Net8.EntityFramework;
 using Blf2.Net8.Entitry;
 using Blf2.Net8.Entitry.DTOs;
 using Blf2.Net8.Entitry.RequestFeature;
+using Blf2.Net8.Service;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -14,13 +15,15 @@ namespace Blf2.Net8.Web.Controllers {
     [Route("api/player")]
     [ApiController]
     public class PlayerController : ControllerBase {
+        private readonly IPlayerService _playerService;
         private readonly IPlayerRepository _playerRepository;
         private readonly IMapper _mapper;
       
         // 构造函数
-        public PlayerController(IPlayerRepository playerRepository , IMapper mapper) {
+        public PlayerController(IPlayerRepository playerRepository, IMapper mapper, IPlayerService playerService) {
             _playerRepository = playerRepository;
             _mapper = mapper;
+            _playerService = playerService;
         }
 
         /// <summary>
@@ -140,6 +143,16 @@ namespace Blf2.Net8.Web.Controllers {
             _playerRepository.Delete(players);
             await _playerRepository.SaveChangesAsync();
             return Ok();
+        }
+
+        [HttpGet("Search")]
+        public async Task<IActionResult> Search(Guid guid, string account) {
+            var request = new PlayerDto {
+                Id = guid,
+                Account = account
+            };
+            var result = _playerService.SearchPlayers(request);
+            return Ok(result);
         }
     }
 }
